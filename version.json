@@ -1,6 +1,6 @@
 {
-  "version": "1.1.0",
-  "update_time": "2026-08-08",
-  "description": "AI Dictionary initial online vocabulary update",
-  "terms_count": 1094
+  "version": "1.2.0",
+  "update_time": "2026-08-11",
+  "description": "新增 2026-08 第 2 周 AI 词条 16 条：Muse Glimmer/Muse Code、OpenAI Astra、Qwen3.8、Kimi K3、DeepSeek V4、GLM-5.2、Seedance 2.5 等新模型，以及混合推理、长周期智能体、测试时增强等新概念。",
+  "terms_count": 1110
 }
