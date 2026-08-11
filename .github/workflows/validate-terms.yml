@@ -1,0 +1,35 @@
+name: Validate Terms Database
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate terms.json & version.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run validation
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            git diff --name-only "$BASE_SHA" HEAD > /tmp/changed_files.txt
+            python scripts/validate_terms.py --changed-files /tmp/changed_files.txt --base-sha "$BASE_SHA"
+          else
+            python scripts/validate_terms.py
+          fi

@@ -1,11 +1,13 @@
 # AI Terms Database
 
+![Validate Terms Database](https://github.com/wyxy-20/AI-Terms-Database/actions/workflows/validate-terms.yml/badge.svg)
+
 AI Dictionary（AI 时代词典）的**远程在线词库**，用于客户端启动时自动同步最新 AI 术语。
 
 ## 项目介绍
 
 本仓库保存 AI 领域的高质量术语数据，供 [AI Dictionary](https://github.com/) 桌面客户端
-通过「启动自动同步词库系统」增量下载。当前版本包含 **1094 个 AI 相关术语**，
+通过「启动自动同步词库系统」增量下载。当前版本包含 **1110 个 AI 相关术语**，
 覆盖以下领域：
 
 - AI 基础概念
@@ -35,10 +37,10 @@ AI Dictionary 客户端启动时会：
 
 ```json
 {
-  "version": "1.1.0",
-  "update_time": "2026-08-08",
-  "description": "AI Dictionary initial online vocabulary update",
-  "terms_count": 1094
+  "version": "1.2.0",
+  "update_time": "2026-08-11",
+  "description": "新增 2026-08 第 2 周 AI 词条 16 条",
+  "terms_count": 1110
 }
 ```
 
@@ -76,6 +78,8 @@ JSON 数组，每个词条格式如下（必须与客户端模型兼容）：
 
 ## 如何贡献新词
 
+详细的贡献流程、词条格式、质量与去重要求，请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 1. Fork 本仓库；
 2. 编辑 `terms.json`，在数组中**追加**新词条（保持字段完整、难度合法、英文名不重复）；
 3. 提交 Pull Request，说明新增词条所属领域；
@@ -87,6 +91,21 @@ JSON 数组，每个词条格式如下（必须与客户端模型兼容）：
 - 解释面向 AI 初学者，同时保留专业含义；
 - 给出实际应用场景，关联相关概念；
 - 不要复制百科原文，不要空泛解释，不要加入同义词变体（如 GPT / GPT Model / GPT AI）。
+
+## 自动校验（CI）
+
+本仓库配置了 GitHub Actions 自动校验，PR 合并前必须通过：
+
+- 校验 `version.json` / `terms.json` 的格式与字段完整性；
+- 检查 `english_name` 是否重复、`difficulty` 是否为 1/2/3；
+- 检查 `terms_count` 与实际词条数是否一致；
+- 修改 `terms.json` 时必须同步修改 `version.json` 且版本号必须提升。
+
+本地可运行相同的校验（需要 Python 3）：
+
+```bash
+python scripts/validate_terms.py
+```
 
 ## 版本更新规则
 

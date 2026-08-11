@@ -1,0 +1,49 @@
+name: 词条错误报告
+description: 报告词条中的内容错误、过时信息或格式问题
+title: "[纠错] 在这里填写术语名称"
+labels: ["纠错"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助提升词库质量！请尽量提供准确信息，方便维护者快速定位。
+  - type: input
+    id: english_name
+    attributes:
+      label: 有问题的词条英文名称
+      placeholder: 例如：Transformer
+    validations:
+      required: true
+  - type: dropdown
+    id: error_type
+    attributes:
+      label: 问题类型
+      options:
+        - 内容错误
+        - 信息过时
+        - 中文翻译不自然
+        - 分类或难度不当
+        - 格式问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 说明具体哪里有问题、应该是什么
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: 参考链接
+      description: 权威来源链接（强烈建议提供）
+      placeholder: https://
+  - type: checkboxes
+    id: self_check
+    attributes:
+      label: 自查
+      options:
+        - label: 我已确认该词条确实存在（在 terms.json 中可找到）
+          required: true
