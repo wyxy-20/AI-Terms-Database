@@ -18636,5 +18636,277 @@
    "Few-shot Learning",
    "Prompt"
   ]
+ },
+ {
+  "english_name": "Muse Glimmer",
+  "chinese_name": "Muse Glimmer",
+  "category": "工具与框架",
+  "difficulty": 1,
+  "short_description": "Meta 发布的 30B 开源端侧智能体模型，可在单张消费级显卡上本地运行。",
+  "detail_description": "Muse Glimmer 是 Meta 推出的开源（Apache 2.0）智能体模型，参数约 300 亿，面向本地编码、多步推理与 Agent 任务设计。配合 4-bit 量化与投机解码等手段，内存占用可压缩到 18~20GB，在 Mac 或 PC 的单张显卡上即可运行，代表端侧 AI 从对话走向本地智能体的趋势。",
+  "application": [
+   "本地代码助手",
+   "离线智能体工作流"
+  ],
+  "related_terms": [
+   "Edge AI",
+   "Open-weight Model",
+   "Agentic AI"
+  ]
+ },
+ {
+  "english_name": "Muse Code",
+  "chinese_name": "Muse Code",
+  "category": "工具与应用",
+  "difficulty": 1,
+  "short_description": "Meta 推出的面向大型代码库的终端 AI 编程智能体。",
+  "detail_description": "Muse Code 是 Meta 发布的终端编程智能体（Beta），可规划改动、编写代码、运行测试并管理长期开发任务，支持百万级 Token 上下文。其特色是创建持久化子智能体并行处理不同子任务，减少开发者在大型仓库中的反复介入。",
+  "application": [
+   "大型代码库重构",
+   "长周期软件开发"
+  ],
+  "related_terms": [
+   "Claude Code",
+   "AI Coding Agent",
+   "Persistent Subagent"
+  ]
+ },
+ {
+  "english_name": "Astra",
+  "chinese_name": "Astra",
+  "category": "AI Agent",
+  "difficulty": 2,
+  "short_description": "OpenAI 面向长周期任务与多智能体协同的新一代模型系列。",
+  "detail_description": "Astra 是 OpenAI 正在研发的模型系列，核心能力是把复杂任务拆解给多个智能体长期协同完成，从项目管理到高阶数学证明均在其设计目标内。2026 年 8 月，OpenAI 因内部评估显示其网络安全能力可能达到高风险阈值，暂停了部分相关工作。",
+  "application": [
+   "长周期项目推进",
+   "多智能体协同解题"
+  ],
+  "related_terms": [
+   "Multi-Agent",
+   "Long-Horizon Agent",
+   "Agent Collaboration"
+  ]
+ },
+ {
+  "english_name": "Qwen3.8",
+  "chinese_name": "通义千问 3.8",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "阿里巴巴 2026 年 8 月发布的新一代基座大模型。",
+  "detail_description": "Qwen3.8 是阿里通义千问的新一代基座模型，旗舰版 Qwen3.8-Max 总参数 2.4 万亿，采用稀疏混合专家（MoE）架构，单次推理激活约 950 亿参数，支持最长 100 万 Token 上下文并原生具备多模态视觉能力，官方宣布将首次开源 Max 级旗舰权重。",
+  "application": [
+   "编程与办公助手",
+   "长文档与多模态理解"
+  ],
+  "related_terms": [
+   "Qwen",
+   "Mixture of Experts",
+   "Long Context"
+  ]
+ },
+ {
+  "english_name": "Kimi K3",
+  "chinese_name": "Kimi K3",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "月之暗面推出的新一代旗舰大模型。",
+  "detail_description": "Kimi K3 是月之暗面（Moonshot AI）发布的新一代旗舰模型，在多项基准上对标全球顶级模型，延续了 Kimi 系列的超长上下文优势，是 2026 年中国大模型集中发布的代表之一。",
+  "application": [
+   "超长文档理解",
+   "复杂任务对话"
+  ],
+  "related_terms": [
+   "Kimi",
+   "Long Context",
+   "LLM"
+  ]
+ },
+ {
+  "english_name": "DeepSeek V4",
+  "chinese_name": "DeepSeek V4",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "DeepSeek 推出的以极低推理成本为亮点的新一代模型。",
+  "detail_description": "DeepSeek V4 于 2026 年夏季推出，其中 V4 Flash 以突破性的定价策略引发关注，用极低的 API 成本提供接近顶级模型的性能，延续了 DeepSeek 的高性价比开源路线，进一步拉低了行业推理价格。",
+  "application": [
+   "低成本 API 应用",
+   "开源模型本地部署"
+  ],
+  "related_terms": [
+   "DeepSeek",
+   "Open-weight Model",
+   "Reasoning Model"
+  ]
+ },
+ {
+  "english_name": "GLM-5.2",
+  "chinese_name": "GLM-5.2",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "智谱 AI 发布的新一代中英双语大模型。",
+  "detail_description": "GLM-5.2 是智谱（Z.ai）推出的新一代大模型，在中文能力、工具调用与 Agent 场景上持续演进，与 Qwen3.8、Kimi K3、DeepSeek V4 等共同构成 2026 年中国大模型集中发布的浪潮。",
+  "application": [
+   "中文企业应用",
+   "Agent 与工具调用"
+  ],
+  "related_terms": [
+   "GLM",
+   "Tool Calling",
+   "Hybrid Reasoning Model"
+  ]
+ },
+ {
+  "english_name": "Seedance 2.5",
+  "chinese_name": "Seedance 2.5",
+  "category": "生成式 AI",
+  "difficulty": 1,
+  "short_description": "字节跳动发布的单次可生成 30 秒视频的新一代视频模型。",
+  "detail_description": "Seedance 2.5 是字节跳动 Seed 团队发布的视频生成模型，单次直出时长提升到 30 秒，支持多模态参考（多张图片、视频与音频片段）与高保真时序延长，已在豆包、即梦等产品上线并通过火山引擎开放 API。",
+  "application": [
+   "广告与品牌内容",
+   "影视预演与工业培训"
+  ],
+  "related_terms": [
+   "Video Generation",
+   "Diffusion",
+   "Generative AI"
+  ]
+ },
+ {
+  "english_name": "Cloudflare OS",
+  "chinese_name": "Cloudflare OS",
+  "category": "工具与框架",
+  "difficulty": 2,
+  "short_description": "Cloudflare 开源的面向 AI 智能体与企业工作流的开放平台。",
+  "detail_description": "Cloudflare OS 是 Cloudflare 于 2026 年 8 月开源的 AI 智能体工作空间，采用 Apache 2.0 许可，为智能体、应用与企业工作流提供统一运行环境与连接能力，是基础设施厂商切入智能体生态的代表项目。",
+  "application": [
+   "智能体应用托管",
+   "企业工作流集成"
+  ],
+  "related_terms": [
+   "Agent Workflow",
+   "MCP",
+   "Agent Framework"
+  ]
+ },
+ {
+  "english_name": "Orchard",
+  "chinese_name": "Orchard",
+  "category": "AI Agent",
+  "difficulty": 2,
+  "short_description": "微软研究院开源的智能体训练与评估框架。",
+  "detail_description": "Orchard 是微软研究院于 2026 年 8 月发布的开源框架，用于更高效、低成本地训练和评估自主智能体，覆盖编码、网页浏览、工具调用等任务，为 Agent 的强化学习与评测提供统一基础设施。",
+  "application": [
+   "智能体训练",
+   "多任务智能体评估"
+  ],
+  "related_terms": [
+   "Agent Evaluation",
+   "Agent Framework",
+   "Agentic AI"
+  ]
+ },
+ {
+  "english_name": "MS-Agent",
+  "chinese_name": "MS-Agent",
+  "category": "工具与框架",
+  "difficulty": 1,
+  "short_description": "ModelScope 开源的轻量级智能体执行框架。",
+  "detail_description": "MS-Agent 是阿里 ModelScope 推出的轻量框架，用于赋予智能体自主探索与执行复杂任务的能力，提供 MCP 支持与简洁的编排接口，降低 Agent 应用开发门槛。",
+  "application": [
+   "轻量 Agent 应用",
+   "自主探索式任务执行"
+  ],
+  "related_terms": [
+   "Agent Framework",
+   "MCP",
+   "Multi-Agent"
+  ]
+ },
+ {
+  "english_name": "Hybrid Reasoning Model",
+  "chinese_name": "混合推理模型",
+  "category": "大语言模型",
+  "difficulty": 2,
+  "short_description": "在同一模型中结合快速直觉回答与深度推理两种模式的模型。",
+  "detail_description": "混合推理模型让模型根据任务难度自动选择快速响应或长思考路径：简单问题直接回答以降低延迟和成本，复杂问题进入深度推理以提升正确率。GLM-Z1、MiniMax M2、Ling 等 2025~2026 年的模型是这一路线的代表。",
+  "application": [
+   "低成本通用对话",
+   "复杂推理任务"
+  ],
+  "related_terms": [
+   "Reasoning Model",
+   "Inference Scaling",
+   "Thinking Tokens"
+  ]
+ },
+ {
+  "english_name": "Long-Horizon Agent",
+  "chinese_name": "长周期智能体",
+  "category": "AI Agent",
+  "difficulty": 2,
+  "short_description": "能够持续数小时甚至数天执行多步任务的智能体。",
+  "detail_description": "长周期智能体把大型目标拆解为多个步骤，跨会话保持进度、记忆与上下文，并在有限人工干预下持续规划、执行与修正。OpenAI Astra、Meta Muse Code 等新模型都以长周期任务能力为核心卖点。",
+  "application": [
+   "长周期项目管理",
+   "自主软件开发"
+  ],
+  "related_terms": [
+   "Autonomous Agent",
+   "Agent Workflow",
+   "Multi-Agent"
+  ]
+ },
+ {
+  "english_name": "Persistent Subagent",
+  "chinese_name": "持久化子智能体",
+  "category": "AI Agent",
+  "difficulty": 2,
+  "short_description": "在后台异步持续工作、跨步骤保持状态的子智能体。",
+  "detail_description": "持久化子智能体由主智能体创建，负责某个子任务并在后台独立运行，可跨会话保留进度与状态，多个子智能体可并行协作。相比一次性调用，它更适合大型代码库改造等长任务，是新型编程智能体的关键机制。",
+  "application": [
+   "大型代码库并行改造",
+   "多任务异步编排"
+  ],
+  "related_terms": [
+   "Multi-Agent",
+   "Long-Horizon Agent",
+   "Agent Swarm"
+  ]
+ },
+ {
+  "english_name": "Test-Time Augmentation",
+  "chinese_name": "测试时增强",
+  "category": "深度学习",
+  "difficulty": 2,
+  "short_description": "推理时通过对输入做多种变换并聚合输出来提升准确率的技术。",
+  "detail_description": "测试时增强在推理阶段对同一输入生成多种变体（如图像翻转缩放、文本改写），分别预测后聚合结果，从而提升鲁棒性与准确率。2026 年的研究也把这一思路引入 LLM，发现输入多样性在相同算力下比输出采样更有效。",
+  "application": [
+   "图像分类精度提升",
+   "LLM 推理结果增强"
+  ],
+  "related_terms": [
+   "Data Augmentation",
+   "Test-time Compute",
+   "Inference Scaling"
+  ]
+ },
+ {
+  "english_name": "Pre-Release AI Safety Review",
+  "chinese_name": "发布前安全审查",
+  "category": "AI 伦理与安全",
+  "difficulty": 2,
+  "short_description": "在模型公开发布前由政府或第三方评估其高风险能力的机制。",
+  "detail_description": "发布前安全审查要求前沿模型开发者在发布前向监管方开放系统，供其在限定时间内评估网络安全等高风险能力，达到阈值则暂缓发布。2026 年 8 月美国白宫敲定的自愿框架即采用这一机制，要求顶级模型发布前最多 30 天接受政府审查。",
+  "application": [
+   "前沿模型发布流程",
+   "高风险能力评估"
+  ],
+  "related_terms": [
+   "Red Teaming",
+   "Frontier Model",
+   "Safety"
+  ]
  }
 ]
