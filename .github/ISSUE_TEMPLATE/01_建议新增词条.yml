@@ -1,0 +1,71 @@
+name: 建议新增词条
+description: 提议在 AI Terms Database 中收录一个新 AI 术语
+title: "[新词条] 在这里填写英文术语名称"
+labels: ["新词条"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你为 AI Terms Database 贡献新词条！请先搜索仓库确认该词条尚未收录。
+  - type: input
+    id: english_name
+    attributes:
+      label: 词条英文名称
+      placeholder: 例如：Agentic RAG
+    validations:
+      required: true
+  - type: input
+    id: chinese_name
+    attributes:
+      label: 词条中文名称
+      placeholder: 例如：智能体 RAG
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 建议分类
+      options:
+        - AI 基础概念
+        - 大语言模型
+        - AI Agent
+        - RAG 与检索
+        - 模型训练
+        - 推理与部署
+        - 多模态 AI
+        - AI 伦理与安全
+        - 最新趋势
+        - 其他（请在说明中注明）
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: 建议难度
+      options:
+        - "1（入门）"
+        - "2（进阶）"
+        - "3（专家）"
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么值得收录
+      description: 简要说明该词条的价值、热度或常见使用场景
+      placeholder: 该词条最近频繁出现在……，常用于……
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: 参考链接
+      description: 官方文档、论文或权威文章链接（可选）
+      placeholder: https://
+  - type: checkboxes
+    id: self_check
+    attributes:
+      label: 自查
+      options:
+        - label: 我已确认该词条尚未被收录（已搜索仓库）
+          required: true
