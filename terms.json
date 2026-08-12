@@ -18909,4 +18909,84 @@
    "Safety"
   ]
  }
-]
+,
+ {
+  "english_name": "AIGC",
+  "chinese_name": "AI 生成内容",
+  "category": "生成式 AI",
+  "difficulty": 1,
+  "short_description": "利用 AI 模型自动生成文字、图片、音视频等内容的统称。",
+  "detail_description": "AIGC（AI Generated Content）指由生成式 AI 产出内容的模式，涵盖文本、图像、音频、视频与 3D 等形态。与人工创作相比，它大幅降低内容生产成本并提升效率，但也带来版权归属、内容真实性与滥用风险。当前主流实现基于扩散模型与大型语言模型，已成为内容产业的重要生产力工具。",
+  "application": ["营销文案与配图", "短视频与广告素材", "教育与娱乐内容"],
+  "related_terms": ["Generative AI", "Stable Diffusion", "Deepfake"]
+ },
+ {
+  "english_name": "Text-to-Video",
+  "chinese_name": "文生视频",
+  "category": "生成式 AI",
+  "difficulty": 1,
+  "short_description": "仅凭文字描述生成视频片段的技术。",
+  "detail_description": "文生视频让用户输入一段文字提示，模型即生成对应的动态画面，代表产品包括 Sora、Veo、Kling 等。它结合文本理解、图像生成与时序建模，可控制镜头、主体与运动。当前挑战在于时长、物理一致性与细节稳定性，是 AIGC 中最受关注的赛道之一。",
+  "application": ["创意短片与预告片", "广告与电商展示", "概念演示"],
+  "related_terms": ["Video Generation", "Sora", "Text-to-Image"]
+ },
+ {
+  "english_name": "Image-to-Video",
+  "chinese_name": "图生视频",
+  "category": "生成式 AI",
+  "difficulty": 2,
+  "short_description": "以静态图片为基础生成动态视频的技术。",
+  "detail_description": "图生视频输入一张或数张图片，模型推断画面中的运动并生成连贯视频，常配合镜头运动、动画幅度等控制参数。它让创作者把海报、插画或照片动起来，是高效的内容制作工作流。主流实现结合扩散模型与运动模块，可灵、Pika 等工具均支持该能力。",
+  "application": ["让插画或照片动起来", "电商商品动态展示", "短视频素材"],
+  "related_terms": ["Text-to-Video", "Video Generation", "Kling"]
+ },
+ {
+  "english_name": "Text-to-3D",
+  "chinese_name": "文生 3D",
+  "category": "生成式 AI",
+  "difficulty": 2,
+  "short_description": "根据文字描述直接生成 3D 模型的技术。",
+  "detail_description": "文生 3D 从文本生成可用的 3D 资产（网格、纹理或神经场），用于游戏、电商与影视。主流路线结合多视图扩散与重建方法，与 3D Generation、神经渲染等技术相关。当前仍处于发展早期，几何精度与可控性有待提升。",
+  "application": ["游戏资产", "电商 3D 展示", "XR 内容"],
+  "related_terms": ["3D Generation", "Diffusion", "Multimodal AI"]
+ },
+ {
+  "english_name": "Negative Prompt",
+  "chinese_name": "反向提示词",
+  "category": "提示工程",
+  "difficulty": 1,
+  "short_description": "告诉生成模型不想要什么内容的提示写法。",
+  "detail_description": "反向提示词列出希望画面避免的元素（如模糊、畸形、多余手指），让扩散模型在采样时降低这些内容出现的概率。它与正向提示词配合使用，是提升生成质量、减少翻车的最常用技巧之一。",
+  "application": ["Stable Diffusion 出图", "去除水印与瑕疵", "风格纯净度控制"],
+  "related_terms": ["Prompt Engineering", "Stable Diffusion", "Sampling"]
+ },
+ {
+  "english_name": "CFG Scale",
+  "chinese_name": "CFG 引导强度",
+  "category": "生成式 AI",
+  "difficulty": 2,
+  "short_description": "控制生成结果对提示词遵循程度的参数。",
+  "detail_description": "CFG Scale（Classifier-Free Guidance）衡量输出与提示词的对齐强度：数值越高越贴合提示但可能色彩过饱和，越低越自由但容易跑题。通常在 4 到 10 之间调节，是扩散模型出图的核心参数之一，与采样步数共同决定画面质量。",
+  "application": ["扩散模型参数调优", "写实与风格化控制", "AIGC 工作流"],
+  "related_terms": ["Stable Diffusion", "Sampling", "Prompt"]
+ },
+ {
+  "english_name": "AI Avatar",
+  "chinese_name": "AI 数字人形象",
+  "category": "多模态 AI",
+  "difficulty": 2,
+  "short_description": "由 AI 生成或驱动的虚拟人物形象。",
+  "detail_description": "AI Avatar 指 AI 生成并驱动的虚拟形象，可包含人脸建模、语音合成与口型同步，用于直播、客服与短视频。它与 Digital Human 相近，但更侧重形象与互动应用；当前正从静态形象走向实时交互。",
+  "application": ["虚拟主播与数字人直播", "AI 客服形象", "短视频数字分身"],
+  "related_terms": ["Digital Human", "Voice Cloning", "TTS"]
+ },
+ {
+  "english_name": "Deepfake Detection",
+  "chinese_name": "深度伪造检测",
+  "category": "AI 伦理与安全",
+  "difficulty": 2,
+  "short_description": "识别由 AI 生成或篡改的人脸、音视频的技术。",
+  "detail_description": "深度伪造检测通过分析人脸特征、光影一致性与压缩痕迹，判断媒体是否经过 AI 伪造。它是打击虚假信息、维护取证与账号安全的重要防线，常与人工审核、水印溯源结合使用。随着生成模型进化，检测也需要持续对抗升级。",
+  "application": ["平台内容审核", "司法取证", "身份核验防欺诈"],
+  "related_terms": ["Deepfake", "C2PA", "Watermarking"]
+ }]
