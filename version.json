@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "update_time": "2026-08-12",
-  "description": "新增 AIGC 主题词条 8 条：AIGC、Text-to-Video、Image-to-Video、Text-to-3D、Negative Prompt、CFG Scale、AI Avatar、Deepfake Detection。",
-  "terms_count": 1118
+  "version": "1.4.0",
+  "update_time": "2026-08-16",
+  "description": "新增 2026-08 第 3 周 AI 词条 7 条：Nemotron、Gemini 3.7 Flash、DeepSeek Harness、Daybreak、Prompt Routing、Hill Climbing、Learnware。",
+  "terms_count": 1125
 }
