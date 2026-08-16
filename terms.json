@@ -18694,7 +18694,7 @@
   "category": "大语言模型",
   "difficulty": 1,
   "short_description": "阿里巴巴 2026 年 8 月发布的新一代基座大模型。",
-  "detail_description": "Qwen3.8 是阿里通义千问的新一代基座模型，旗舰版 Qwen3.8-Max 总参数 2.4 万亿，采用稀疏混合专家（MoE）架构，单次推理激活约 950 亿参数，支持最长 100 万 Token 上下文并原生具备多模态视觉能力，官方宣布将首次开源 Max 级旗舰权重。",
+  "detail_description": "Qwen3.8 是阿里通义千问的新一代基座模型，旗舰版 Qwen3.8-Max 总参数 2.4 万亿，采用稀疏混合专家（MoE）架构，单次推理激活约 950 亿参数，支持最长 100 万 Token 上下文并原生具备多模态视觉能力，并于 2026 年 8 月 13 日正式开源全部权重（Qwen3.8-2.4T-A95B），成为 Qwen 系列首款开源 Max 级旗舰模型。",
   "application": [
    "编程与办公助手",
    "长文档与多模态理解"
@@ -18989,4 +18989,74 @@
   "detail_description": "深度伪造检测通过分析人脸特征、光影一致性与压缩痕迹，判断媒体是否经过 AI 伪造。它是打击虚假信息、维护取证与账号安全的重要防线，常与人工审核、水印溯源结合使用。随着生成模型进化，检测也需要持续对抗升级。",
   "application": ["平台内容审核", "司法取证", "身份核验防欺诈"],
   "related_terms": ["Deepfake", "C2PA", "Watermarking"]
+ },
+ {
+  "english_name": "Nemotron",
+  "chinese_name": "Nemotron",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "英伟达推出的开放权重大模型系列。",
+  "detail_description": "Nemotron 是英伟达的开源（open-weight）大模型系列，2026 年 8 月发布的 Nemotron 3.5 Lightning 采用混合专家架构（总参数约 30B、每个 Token 仅激活约 3B），可在单张消费级显卡上以约 670 token/秒的速度运行，面向高频智能体任务。英伟达同时披露正在开发旗舰版 Nemotron 4，最大模型预计至少 1 万亿参数，目标对标全球顶尖开源模型。",
+  "application": ["本地与单卡 Agent 部署", "高吞吐智能体工作负载"],
+  "related_terms": ["LLM", "Open-weight Model", "Mixture of Experts"]
+ },
+ {
+  "english_name": "Gemini 3.7 Flash",
+  "chinese_name": "Gemini 3.7 Flash",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "谷歌 2026 年 8 月发布的面向编程与 Agent 工作流的 Flash 系列新模型。",
+  "detail_description": "Gemini 3.7 Flash 于 2026 年 8 月 13 日发布，主打编码与智能体工作流，支持最长 100 万 Token 上下文并原生处理文本、图像、音频与视频。官方数据显示其在编程基准 FrontierCode 1.1 上得分从 34.4% 提升到 43.6%，输入价格降至上一代一半（每百万 Token 0.75 美元），是高性价比的 Agent 基座模型。",
+  "application": ["AI 编程助手", "多步工具调用 Agent", "长上下文多模态处理"],
+  "related_terms": ["Gemini", "Reasoning Model", "AI Coding Agent"]
+ },
+ {
+  "english_name": "DeepSeek Harness",
+  "chinese_name": "DeepSeek Harness",
+  "category": "工具与框架",
+  "difficulty": 2,
+  "short_description": "DeepSeek 开源的智能体运行框架，定位为模型与智能体之间的连接层。",
+  "detail_description": "DeepSeek Harness（DSH）是 DeepSeek 于 2026 年 8 月 13 日发布的 Agent 运行框架开发者预览版，以 MIT 协议开源，采用「一切皆插件」的设计理念，把工具调用、任务执行与模型接入解耦，可接入包括竞对在内的任意模型。它被视为补齐 Vibe Coding 入口的关键一环，并已上线国家超算互联网提供一站式部署。",
+  "application": ["智能体应用开发", "工具与任务编排", "多模型灵活接入"],
+  "related_terms": ["Agent Framework", "Tool Calling", "MCP"]
+ },
+ {
+  "english_name": "Daybreak",
+  "chinese_name": "破晓计划",
+  "category": "AI 伦理与安全",
+  "difficulty": 2,
+  "short_description": "OpenAI 面向授权网络安全研究推出的受限模型访问计划。",
+  "detail_description": "Daybreak 是 OpenAI 的网络安全模型访问计划，2026 年 8 月扩展出 Daybreak Blue（面向防御者、移除阻碍防御工作的系统级护栏）与 Daybreak Red（面向授权攻击性研究）两个通道，并要求身份核验与硬件安全密钥。配套的 GPT-5.6-Cyber 是首个由前沿实验室专为网络安全训练的领域模型，可完成漏洞研究、利用链开发与权限提升等任务，曾协助发现 Chrome V8 的高危漏洞。",
+  "application": ["授权漏洞研究与披露", "企业安全防护测试", "红队与渗透评估"],
+  "related_terms": ["Red Teaming", "Dual-Use", "Frontier Model"]
+ },
+ {
+  "english_name": "Prompt Routing",
+  "chinese_name": "提示词路由",
+  "category": "推理与部署",
+  "difficulty": 2,
+  "short_description": "按任务特点把请求自动分发到最合适模型的策略。",
+  "detail_description": "提示词路由在模型调用层根据问题类型、难度与成本预算，把每个请求路由到最合适的模型：简单问题走便宜快速的小模型，复杂问题走能力更强的大模型。它是多模型平台平衡质量、延迟与成本的关键工程手段，也是模型生态碎片化下的重要趋势。",
+  "application": ["多模型 API 网关", "成本与延迟优化", "混合模型调度"],
+  "related_terms": ["LLM", "API", "Inference"]
+ },
+ {
+  "english_name": "Hill Climbing",
+  "chinese_name": "爬山算法",
+  "category": "机器学习",
+  "difficulty": 1,
+  "short_description": "从当前解出发不断移向更优相邻解的启发式搜索方法。",
+  "detail_description": "爬山算法从初始解开始，每步选择让目标函数更优的相邻解，直到无法继续改进为止，简单高效但容易陷入局部最优，衍生出随机重启、模拟退火等改进版本。2026 年「爬山」也成为硅谷形容 AI 公司通过小步迭代逼近目标的流行说法。",
+  "application": ["组合优化问题求解", "特征选择与参数寻优", "AI 产品小步迭代"],
+  "related_terms": ["Gradient Descent", "Heuristic", "Optimization"]
+ },
+ {
+  "english_name": "Learnware",
+  "chinese_name": "学件",
+  "category": "AI 基础概念",
+  "difficulty": 3,
+  "short_description": "由机器学习模型与其规约组成的可复用软件制品。",
+  "detail_description": "学件（Learnware）由南京大学周志华教授于 2016 年提出，指「模型 + 规约」：模型负责完成特定任务，规约（语义规约与统计规约）描述其能力与适用范围。通过学件坞，用户可按需求描述检索并复用已有学件，无需原始数据即可完成增量适配，从而缓解模型复用难与数据不流通的问题。",
+  "application": ["模型复用与市场交易", "数据隐私受限场景建模", "增量式任务适配"],
+  "related_terms": ["Transfer Learning", "Foundation Model", "Machine Learning"]
  }]
