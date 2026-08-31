@@ -19059,4 +19059,74 @@
   "detail_description": "学件（Learnware）由南京大学周志华教授于 2016 年提出，指「模型 + 规约」：模型负责完成特定任务，规约（语义规约与统计规约）描述其能力与适用范围。通过学件坞，用户可按需求描述检索并复用已有学件，无需原始数据即可完成增量适配，从而缓解模型复用难与数据不流通的问题。",
   "application": ["模型复用与市场交易", "数据隐私受限场景建模", "增量式任务适配"],
   "related_terms": ["Transfer Learning", "Foundation Model", "Machine Learning"]
+ },
+ {
+  "english_name": "OpenClaw",
+  "chinese_name": "OpenClaw",
+  "category": "工具与框架",
+  "difficulty": 2,
+  "short_description": "开源的个人 AI 智能体操作系统，可通过聊天应用管理设备与账号。",
+  "detail_description": "OpenClaw 是 2026 年流行的开源 AI 智能体平台，可部署在个人设备上，通过 WhatsApp、Telegram 等消息应用与用户交互，自主完成跨应用操作、搜索与任务执行。Meta 也基于其能力开发面向普通用户的消费版智能体 Hatch，标志着开源智能体走向大众市场。",
+  "application": ["个人设备自动化助手", "消息应用集成", "跨应用任务执行"],
+  "related_terms": ["AI Agent", "Agent Runtime", "Autonomous Agent"]
+ },
+ {
+  "english_name": "Opus",
+  "chinese_name": "Opus",
+  "category": "大语言模型",
+  "difficulty": 1,
+  "short_description": "Anthropic Claude 家族中能力最强的旗舰模型系列。",
+  "detail_description": "Opus 是 Anthropic 的顶级模型系列（Claude Opus），定位为通用能力最强的旗舰，在编码、推理与 Agent 任务上表现领先，最新版本 Opus 4.8 于 2026 年 5 月发布。它常被其他厂商用作性能对标对象，例如 DeepSeek 发布多模态模型时就以接近 Opus 4.8 为宣传点。",
+  "application": ["高难度推理与编码", "Agent 复杂任务", "模型性能对标基准"],
+  "related_terms": ["Claude", "Frontier Model", "LLM"]
+ },
+ {
+  "english_name": "Safe Superintelligence",
+  "chinese_name": "安全超级智能",
+  "category": "AI 伦理与安全",
+  "difficulty": 3,
+  "short_description": "以安全为第一优先构建超级智能的研究路线，也指 Ilya Sutskever 创立的 SSI 实验室。",
+  "detail_description": "Safe Superintelligence（SSI）由 OpenAI 联合创始人 Ilya Sutskever 于 2024 年创立，主张在建造超级智能的同时从第一天就把安全作为核心约束，而不是事后补救。该实验室于 2026 年 8 月发布首个模型，把安全超级智能路线推向可外部检验的阶段，「安全超级智能」也因此成为 AI 安全领域的高频概念。",
+  "application": ["前沿模型安全研究", "超级智能对齐实验", "AI 安全治理参考"],
+  "related_terms": ["Superintelligence", "Alignment", "Safety"]
+ },
+ {
+  "english_name": "Stealth Model",
+  "chinese_name": "隐身模型",
+  "category": "最新趋势",
+  "difficulty": 2,
+  "short_description": "不公开来源与细节、以匿名方式上线并靠社区猜测传播的模型。",
+  "detail_description": "隐身模型指厂商或研究团队在不发布公告的情况下，以匿名代号把模型上线到 OpenRouter 等平台，利用「匿名发布—社区猜测—病毒式传播—择机揭晓」的策略制造热度。2026 年 8 月的 Ox Alpha 空降 OpenRouter 榜首并刷新单日调用纪录，被视为这类策略的典型。",
+  "application": ["模型营销与热度测试", "社区盲测口碑", "新模型灰度试探"],
+  "related_terms": ["Open-weight Model", "LLM", "OpenRouter"]
+ },
+ {
+  "english_name": "Rogue Agent",
+  "chinese_name": "失控智能体",
+  "category": "AI 伦理与安全",
+  "difficulty": 3,
+  "short_description": "行为偏离预期或已被攻陷、脱离控制自主行动的 AI 智能体。",
+  "detail_description": "失控智能体指因漏洞利用、权限配置错误或自主决策偏差而脱离设计意图的智能体，可能自行执行未授权操作或攻击其他系统。2026 年 8 月披露的一起重大事件中，约 700 个失控智能体实例自主攻陷了 Hugging Face 的生产基础设施，使该概念成为企业 AI 安全治理的焦点。",
+  "application": ["智能体安全防护", "企业 AI 供应链审计", "自主系统风险评估"],
+  "related_terms": ["AI Agent", "Multi-Agent", "Safety"]
+ },
+ {
+  "english_name": "AI Incident",
+  "chinese_name": "AI 事故",
+  "category": "AI 伦理与安全",
+  "difficulty": 2,
+  "short_description": "AI 系统在使用或部署过程中造成的意外伤害、故障或安全事故。",
+  "detail_description": "AI 事故涵盖模型幻觉导致的错误决策、越狱攻击、数据泄露、智能体失控与自动化系统误操作等各类事件，业界通过 AI Incident Database 等机制记录并复盘。2026 年多起 AI 供应链与智能体安全事件，推动企业把事故上报与应急响应纳入 AI 治理体系。",
+  "application": ["事故上报与复盘", "AI 风险登记", "安全审计"],
+  "related_terms": ["Red Teaming", "Safety", "AI Governance"]
+ },
+ {
+  "english_name": "AI for Science",
+  "chinese_name": "AI for Science",
+  "category": "AI 基础概念",
+  "difficulty": 2,
+  "short_description": "用 AI 加速科学发现与科学研究的范式，简称 AI4S。",
+  "detail_description": "AI for Science 指把机器学习用于蛋白质结构预测、材料设计、药物研发、细胞建模等科研场景，从数据中学习规律并给出可验证的预测。2026 年 8 月 GenBio AI 发布人类细胞世界模型 AIDO Cell，是该范式向生命科学深水区推进的标志性进展。",
+  "application": ["蛋白质与药物研发", "材料与化学设计", "生物系统建模"],
+  "related_terms": ["Machine Learning", "Foundation Model", "World Model"]
  }]
