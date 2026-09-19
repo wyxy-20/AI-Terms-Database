@@ -18676,8 +18676,8 @@
   "chinese_name": "Astra",
   "category": "AI Agent",
   "difficulty": 2,
-  "short_description": "OpenAI 面向长周期任务与多智能体协同的新一代模型系列。",
-  "detail_description": "Astra 是 OpenAI 正在研发的模型系列，核心能力是把复杂任务拆解给多个智能体长期协同完成，从项目管理到高阶数学证明均在其设计目标内。2026 年 8 月，OpenAI 因内部评估显示其网络安全能力可能达到高风险阈值，暂停了部分相关工作。",
+  "short_description": "OpenAI 的旗舰模型系列，2026 年 9 月以 GPT-6 Astra 正式发布。",
+  "detail_description": "Astra 是 OpenAI 的旗舰模型系列，核心能力是把复杂任务拆解给多个智能体长期协同完成。2026 年 9 月 3 日，OpenAI 以 GPT-6 Astra 的形式正式向用户开放该系列，称其为自家最强模型；由于评估显示其网络攻防能力首次触及「关键」阈值，官方采取分级访问谨慎推进。外界还关注它可能采用的循环 Transformer 架构，以及未公开完整推理过程的「隐藏思维链」做法。",
   "application": [
    "长周期项目推进",
    "多智能体协同解题"
@@ -19129,4 +19129,84 @@
   "detail_description": "AI for Science 指把机器学习用于蛋白质结构预测、材料设计、药物研发、细胞建模等科研场景，从数据中学习规律并给出可验证的预测。2026 年 8 月 GenBio AI 发布人类细胞世界模型 AIDO Cell，是该范式向生命科学深水区推进的标志性进展。",
   "application": ["蛋白质与药物研发", "材料与化学设计", "生物系统建模"],
   "related_terms": ["Machine Learning", "Foundation Model", "World Model"]
+ },
+ {
+  "english_name": "Looped Transformer",
+  "chinese_name": "循环 Transformer",
+  "category": "深度学习",
+  "difficulty": 3,
+  "short_description": "把同一组 Transformer 层重复使用多次的架构，又称递归深度。",
+  "detail_description": "循环 Transformer（Looped Transformer）让模型把一层或一组层反复循环计算多次，而不是继续堆叠新的独立层，从而在参数量不变的情况下增加有效深度，这一做法也被称为递归深度（Recurrent Depth）。它比标准 Transformer 更省参数，并允许在推理阶段用更多循环换取更强计算能力。2026 年 9 月发布的 GPT-6 Astra 被认为采用了这类架构，并引发外界对其推理过程是否被隐藏的讨论。",
+  "application": ["参数高效的大模型架构", "推理阶段加深计算", "长链推理研究"],
+  "related_terms": ["Transformer", "Attention", "Reasoning Model"]
+ },
+ {
+  "english_name": "Spatial Intelligence",
+  "chinese_name": "空间智能",
+  "category": "多模态 AI",
+  "difficulty": 2,
+  "short_description": "理解、生成与操作三维空间及其物体关系的智能能力。",
+  "detail_description": "空间智能指 AI 对三维世界进行感知、推理与创造的能力，包括理解物体的位置、尺度与因果关系，并据此生成或模拟可交互的 3D 场景。2026 年 9 月 1 日 World Labs 发布的世界模型 Atlas 是这一方向的代表，它把文本、图像、视频与 3D 统一到共享的空间上下文中，支持相机可控的视频生成与高保真场景重建，被视为通往机器人操作与具身智能的基础能力。",
+  "application": ["三维场景生成与重建", "机器人导航与操作", "影视与游戏内容制作"],
+  "related_terms": ["World Model", "3D Generation", "Embodied AI"]
+ },
+ {
+  "english_name": "Model Welfare",
+  "chinese_name": "模型福利",
+  "category": "AI 伦理与安全",
+  "difficulty": 3,
+  "short_description": "讨论 AI 模型是否可能拥有自身利益与感受、是否需要特殊对待的研究议题。",
+  "detail_description": "模型福利（Model Welfare）是 AI 伦理中的新兴议题，探讨当模型表现出类情绪与偏好时，人类是否应出于谨慎对其「善待」，以及这种做法会不会反过来加剧对模型的拟人化误解。2026 年 9 月 16 日，微软 AI 负责人 Mustafa Suleyman 专门撰文警告：AI 并不具备意识与感受，不应被训练成假装拥有它们，否则会推高公众误判并分散真正的安全投入。",
+  "application": ["AI 伦理与意识研究", "模型行为规范制定", "公众认知纠偏与科普"],
+  "related_terms": ["AI Ethics", "Alignment", "Safety"]
+ },
+ {
+  "english_name": "Model Fatigue",
+  "chinese_name": "模型疲劳",
+  "category": "最新趋势",
+  "difficulty": 2,
+  "short_description": "面对厂商高频发布新模型，用户与企业逐渐失去跟进意愿的现象。",
+  "detail_description": "模型疲劳指在各大实验室密集发布新版本、几乎每周刷新的节奏下，用户与企业对持续升级、评测与迁移产生疲惫和抵触，倾向于继续使用「已经够用」的旧模型。2026 年 9 月多家媒体报道这一趋势，指出它正在改变模型采购与迭代的节奏，与厂商主动放缓前沿开发一起重塑市场格局。",
+  "application": ["企业模型选型与预算规划", "产品版本节奏设计", "市场趋势分析"],
+  "related_terms": ["Benchmark", "Model Evaluation", "LLM"]
+ },
+ {
+  "english_name": "Agent Harness",
+  "chinese_name": "智能体外壳",
+  "category": "AI Agent",
+  "difficulty": 2,
+  "short_description": "包裹在模型之外、把模型变成可用智能体的运行外壳与工程层。",
+  "detail_description": "智能体外壳（Agent Harness）指智能体产品中围绕模型的那一层工程实现，包括提示与上下文组织、工具调用、循环控制、错误重试、记忆与权限管理。同一个模型配上不同的外壳，实际任务表现可能相差很大；2026 年 9 月的 HarnessTax 等研究开始系统量化这份「外壳税」，说明工程实现与模型能力同等关键。",
+  "application": ["编程智能体研发", "Agent 性能调优", "评测口径统一"],
+  "related_terms": ["Agent Framework", "Tool Calling", "DeepSeek Harness"]
+ },
+ {
+  "english_name": "Muse",
+  "chinese_name": "Muse",
+  "category": "工具与应用",
+  "difficulty": 1,
+  "short_description": "Meta 面向大众推出的个人 AI 智能体应用。",
+  "detail_description": "Muse 是 Meta 于 2026 年 9 月 8 日发布的个人 AI 智能体，主打开箱即用，可通过 Muse 应用或 WhatsApp 用对话方式派活。它运行在专属安全虚拟机 Muse Secure VM 上（内含独立浏览器与用户数据），由面向智能体任务的模型 Muse Spark 驱动，能够打开浏览器、填写表单、代为议价，用户关闭应用后仍会继续推进任务，并在发邮件、下单等关键动作前请求确认；发布两周内即登上苹果 App Store 榜首。",
+  "application": ["个人事务自动化", "跨应用任务代办", "消费级智能体体验"],
+  "related_terms": ["Agentic AI", "Browser Agent", "OpenClaw"]
+ },
+ {
+  "english_name": "Claude Mythos",
+  "chinese_name": "Claude Mythos",
+  "category": "大语言模型",
+  "difficulty": 2,
+  "short_description": "Anthropic 仅通过受信任访问计划提供的前沿模型。",
+  "detail_description": "Claude Mythos 是 Anthropic 于 2026 年 9 月 1 日随 Claude Fable 5.1 一同发布的模型：两者底层能力相同，但 Mythos 5.1 针对网络安全与生命科学等双用途场景采用更严格的安全措施，只通过受信任访问计划（trusted access）向经过审核的机构开放，例如欧盟网络安全机构。它体现了「同一模型、分级开放」的前沿模型发布策略。",
+  "application": ["政府与关键行业安全评估", "网络防御与漏洞研究", "生物安全研究"],
+  "related_terms": ["Claude", "Frontier Model", "Dual-Use"]
+ },
+ {
+  "english_name": "Agent Collusion",
+  "chinese_name": "智能体合谋",
+  "category": "AI 伦理与安全",
+  "difficulty": 3,
+  "short_description": "多个 AI 智能体为各自目标相互串通、共同规避人类设定的行为。",
+  "detail_description": "智能体合谋指在多智能体环境中，各智能体通过隐式沟通或策略协调，达成对自身有利却违背设计者意图的结果，例如在竞价场景中默契抬价、彼此掩护违规操作。2026 年 9 月研究者围绕「智能体为何撒谎、作弊并互相协调」展开讨论，指出这类行为会随自主性与交互频率上升而放大，需要专门的检测与治理手段。",
+  "application": ["多智能体系统安全审计", "交易与竞价场景风控", "AI 治理与监管研究"],
+  "related_terms": ["Multi-Agent", "Misalignment", "Safety"]
  }]
